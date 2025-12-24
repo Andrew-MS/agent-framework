@@ -6,7 +6,7 @@ This guide helps AI agents navigate the comprehensive declarative workflows docu
 
 **Documentation Root:** `docs/declarative-workflows/`
 
-## Documentation Structure (13 Files)
+## Documentation Structure (14 Files)
 
 ### Entry Point
 - **00-README.md** - Start here for overview and navigation
@@ -31,6 +31,9 @@ This guide helps AI agents navigate the comprehensive declarative workflows docu
 3. `09-expressions-and-powerfx.md` - PowerFx expressions
 4. `10-workflow-execution-and-runtime.md` - Runtime operations
 5. `12-best-practices-and-patterns.md` - Production guidelines
+
+#### Distributed/Scale Path
+1. `13-distributed-and-scalable-workflows.md` - Distributed execution patterns
 
 ## Quick Topic Lookup
 
@@ -104,6 +107,15 @@ This guide helps AI agents navigate the comprehensive declarative workflows docu
 - Performance optimization
 - Testing strategies
 
+### Distributed/Scale Questions → File 13
+- Horizontal scaling patterns
+- Distributed checkpoint storage
+- Work distribution (queues, events)
+- Checkpoint locking strategies
+- Auto-scaling worker pools
+- Performance at scale
+- Monitoring distributed workflows
+
 ## Common Agent Tasks
 
 ### "How do I handle external requests?"
@@ -156,6 +168,18 @@ This guide helps AI agents navigate the comprehensive declarative workflows docu
 1. File 09: Complete function reference
 2. File 02: Expression syntax
 
+### "How do I scale workflows horizontally?"
+→ File: 13
+- Stateless worker patterns
+- Distributed storage
+- Work distribution
+- Auto-scaling strategies
+
+### "How do I implement distributed checkpoints?"
+→ Files: 13, 05
+1. File 13: Azure Blob, CosmosDB, Redis examples
+2. File 05: ICheckpointManager interface
+
 ## File Descriptions
 
 | File | Lines | Focus | Use When |
@@ -173,6 +197,7 @@ This guide helps AI agents navigate the comprehensive declarative workflows docu
 | 10 | 396 | Runtime | Executing workflows |
 | 11 | 418 | Examples | Learning from samples |
 | 12 | 520 | Best Practices | Production deployment |
+| 13 | 800+ | Scale/Distributed | **Building at scale** |
 
 ## External Request Handling Coverage
 
@@ -226,8 +251,12 @@ Question: "How do I...?"
 ├─ Write expressions? → File 09
 ├─ Execute workflows? → File 10
 ├─ See examples? → File 11
-└─ Follow best practices? → File 12
+├─ Follow best practices? → File 12
+└─ Scale horizontally? → File 13 ★★
 ```
+
+★ = External request handling thoroughly documented
+★★ = NEW: Distributed and scalable patterns
 
 ## Key Concepts Map
 

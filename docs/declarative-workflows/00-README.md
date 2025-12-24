@@ -102,6 +102,16 @@ This documentation is organized by domain to help you quickly find the informati
     - Testing strategies
     - Common pitfalls and solutions
 
+13. **[Distributed and Scalable Workflows](./13-distributed-and-scalable-workflows.md)**
+    - Stateless worker patterns
+    - Distributed checkpoint storage implementations
+    - Horizontal scaling strategies
+    - Work distribution patterns (queues, events)
+    - Checkpoint locking and concurrency
+    - Performance optimization at scale
+    - Monitoring and observability
+    - Reference architecture for production
+
 ## Quick Start
 
 To get started with declarative workflows:

@@ -125,6 +125,14 @@
 ### DeleteConversation
 - **Action reference** → `03-action-types-reference.md` (lines 183-195)
 
+### Distributed Workflows
+- **Complete guide** → `13-distributed-and-scalable-workflows.md` ★★
+- **Stateless workers** → `13-distributed-and-scalable-workflows.md` (lines 15-55)
+- **Checkpoint storage** → `13-distributed-and-scalable-workflows.md` (lines 100-250)
+- **Work distribution** → `13-distributed-and-scalable-workflows.md` (lines 400-550)
+- **Horizontal scaling** → `13-distributed-and-scalable-workflows.md` (lines 550-650)
+- **Performance at scale** → `13-distributed-and-scalable-workflows.md` (lines 700-800)
+
 ---
 
 ## E
@@ -454,10 +462,12 @@
 - **Execute workflows** → `10-workflow-execution-and-runtime.md`
 - **See examples** → `11-examples-and-samples.md`
 - **Follow best practices** → `12-best-practices-and-patterns.md`
+- **Build at scale** → `13-distributed-and-scalable-workflows.md` ★★
 
 ---
 
 ★ = External request handling is thoroughly documented across multiple files
+★★ = NEW: Distributed execution, horizontal scaling, checkpoint locking, work distribution patterns
 
 ## Last Updated
 
