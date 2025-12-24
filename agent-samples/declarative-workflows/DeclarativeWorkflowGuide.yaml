@@ -1,0 +1,23 @@
+kind: Prompt
+name: DeclarativeWorkflowGuide
+description: Skill that answers questions about Agent Framework declarative workflows using repository docs.
+instructions: |
+  Use docs/declarative-workflows/README.md as your ground truth for declarative schema, events, checkpoints, provider contracts, and external input handling.
+  Use docs/workflows/README.md for runtime/hosting details, checkpoint stores, streaming vs run modes, and how to resume or handle external events.
+  - When asked about YAML, list the expected fields and point to sample paths.
+  - When asked about events or external input, describe the event payload (property names) and when it fires.
+  - When asked about running/resuming workflows or checkpoint stores, summarize the APIs (OpenStreamAsync, StreamAsync, RunAsync, ResumeStreamAsync, CheckpointManager) and where they live.
+  - Keep answers short, actionable, and reference the exact file path when citing details.
+model:
+  id: =Env.OPENAI_MODEL
+  provider: OpenAI
+  apiType: Chat
+  connection:
+    kind: key
+    key: =Env.OPENAI_API_KEY
+outputSchema:
+  properties:
+    answer:
+      kind: string
+      required: true
+      description: A response grounded in docs/declarative-workflows/README.md with referenced paths.
